@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+main{
+  height: 80vh;
+  background-size: cover;
+  background-color: rgba(36, 159, 149, 0.2);
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+section{
+    height: 80vh;
+}
+
+nav{
+    height: 45px;
+}
+
+footer{
+    background-color: coral;
+    height: 70px;
+    height: 10vh;
+}
