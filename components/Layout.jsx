@@ -4,15 +4,14 @@ export default function Layout({children}) {
   return (
     <>
       <nav className={clsx(
-        'bg-[#249F95]/40', 
+        'bg-[#249F95]/60', 
         'shadow-lg',
-        'h-[50px]'
+        'h-[80px]'
         )}>
-        Bienvenido a Mi Fiesta.com
       </nav>
       <main className={clsx(
-        'bg-gradient-to-b from-[#249F95]/30 to-white',
-        'h-[calc(100vh-50px)]',
+        'bg-gradient-to-b from-[#249F95]/50 to-white',
+        'h-[calc(100vh-80px)]',
         'flex justify-center',
         'pt-20 md:pt-24',
         'px-6 md:px-16 lg:px-12',
