@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'login': "url('/login-section.png')"
+        'login': "url('/login-section.svg')"
       }
     },
   },

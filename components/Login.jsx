@@ -8,22 +8,34 @@ export default function Login({ }) {
         
         'md:py-10 md:px-5', 
         'lg:max-w-screen-xl w-full', 
-        'border-2 border-black', 
-        'flex justify-center'
+        'flex space-x-20'
       )}>
         <article className={clsx(
           'hidden lg:flex',
           'lg:w-1/2',
-          'bg-login bg-contain bg-center bg-no-repeat'
+          'bg-login bg-contain bg-center bg-no-repeat', 
           )}
         >
         </article>
         <article className={clsx(
           'h-full', 
           'w-full lg:w-1/2', 
-          'bg-sky-200',
-          )}
+        )}  
         >
+        <div className={clsx(
+          'text-2xl font-bold text-white',
+          'flex justify-center'
+        )}
+        > Registro 
+          </div>  
+          <ul class="flex border-b">
+            <li class="w-1/2">
+              <a class="rounded-t-lg w-full bg-white inline-block border-l border-r py-2 px-4 text-blue-700 font-semibold" href="#">Cliente</a>
+            </li>
+            <li class="w-1/2">
+              <a class="rounded-t-lg w-full bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" href="#">Proveedor</a>
+            </li>
+          </ul>
       <form className={clsx(
         'bg-white',
         'shadow-md',
