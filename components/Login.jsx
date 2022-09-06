@@ -23,7 +23,7 @@ export default function Login({ }) {
           'w-full lg:w-1/2', 
           'bg-sky-200')}
         >
-          Aquí va el login
+          <h1>Registro</h1>
         </article>
       </section>
         
