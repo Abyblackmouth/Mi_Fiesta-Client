@@ -1,29 +1,14 @@
 import clsx from "clsx"
-import Image from 'next/image'
 
-export default function Login({ }) {
-  return(
-    <>
-      <section className={clsx(
-        
-        'md:py-10 md:px-5', 
-        'lg:max-w-screen-xl w-full', 
-        'border-2 border-black', 
-        'flex justify-center'
-      )}>
-        <article className={clsx(
-          'hidden lg:flex',
-          'lg:w-1/2',
-          'bg-login bg-contain bg-center bg-no-repeat'
-          )}
-        >
-        </article>
-        <article className={clsx(
-          'h-full', 
-          'w-full lg:w-1/2', 
-          'bg-sky-200',
-          )}
-        >
+
+export default function CardLogin() {
+  return (
+    <div className={clsx(
+      'w-full ',
+      'shadow-md',
+      'rounded-sm'
+    )}
+    >
       <form className={clsx(
         'bg-white',
         'shadow-md',
@@ -104,10 +89,7 @@ export default function Login({ }) {
           </a>
         </div>
       </form>
-          
-        </article>
-      </section>
-        
-    </>
+    </div>
+
   )
 }
