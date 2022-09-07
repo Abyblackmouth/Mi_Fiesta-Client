@@ -5,9 +5,10 @@ export default function Layout({children}) {
     <>
       <nav className={clsx(
         'bg-[#249F95]/60', 
-        'shadow-lg',
+        'shadow-xl',
         'h-[80px]'
         )}>
+          <img className=""></img>
       </nav>
       <main className={clsx(
         'bg-gradient-to-b from-[#249F95]/50 to-white',
