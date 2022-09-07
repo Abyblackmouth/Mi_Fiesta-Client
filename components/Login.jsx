@@ -8,7 +8,7 @@ export default function Login({ }) {
         
         'md:py-10 md:px-5', 
         'lg:max-w-screen-xl w-full', 
-        'flex space-x-20'
+        'flex  lg:flex space-x-10'
       )}>
         <article className={clsx(
           'hidden lg:flex',
@@ -24,7 +24,8 @@ export default function Login({ }) {
         >
         <div className={clsx(
           'text-2xl font-bold text-white',
-          'flex justify-center'
+          'flex justify-center',
+          'my-10'
         )}
         > Registro 
           </div>  
@@ -40,7 +41,8 @@ export default function Login({ }) {
         'bg-white',
         'shadow-md',
         'rounded px-8 pt-6 pb-8 mb-4'
-      )}>
+      )}
+      action="url">
         <div className={clsx('mb-4')}>
           <label className={clsx(
             ' block ',
@@ -52,7 +54,7 @@ export default function Login({ }) {
             'shadow',
             'appearance-none',
             'border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
-          )} id="username" type="text" placeholder="Correo" />
+          )} id="username" type="text" placeholder="Correo" name="email" />
         </div>
         <div className={clsx(
           'mb-6'
@@ -74,7 +76,7 @@ export default function Login({ }) {
             'mb-3',
             'leading-tight',
             'focus:outline-none focus:shadow-outline')}
-            id="password" type="password" placeholder="******************" />
+            id="password" type="password" name="password" placeholder="******************" />
         </div>
         <div className={clsx("mb-6")}>
           <label className="block text-gray-700 text-sm font-bold mb-2" for="password">
@@ -85,7 +87,7 @@ export default function Login({ }) {
             'appearance-none',
             'border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight ',
             ' focus:outline-none focus:shadow-outline')}
-            id="password" type="password" placeholder="******************" />
+            id="password" type="password" placeholder="******************" n />
         </div>
         <div className={clsx(
           ' flex ',
