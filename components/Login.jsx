@@ -5,7 +5,16 @@ import {useForm} from "react-hook-form"
 
 export default function Login({ }) {
 const {register,handleSubmit} = useForm()
-
+const onSubmit = async data => {
+  let result = await fetch(
+    'https://mifiesta-924b9-default-rtdb.firebaseio.com/.json',
+    {
+      method: 'POST',
+      body: JSON.stringify(data)
+    }
+  )
+  console.log(await result.json())
+}
   return(
     <>
       <section className={clsx(
@@ -30,7 +39,7 @@ const {register,handleSubmit} = useForm()
         'bg-white',
         'shadow-md',
         'rounded-lg px-8 pt-6 pb-8 mb-4'
-      )}>
+      )} onSubmit={handleSubmit(onSubmit)}>
         <div className={clsx('mb-4')}>
           <h1 className={clsx(
             'text-center',
@@ -48,7 +57,10 @@ const {register,handleSubmit} = useForm()
             'appearance-none',
             'border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline',
             'hover:border-cyan-400 border-2'
-          )} id="username" type="text" placeholder="Correo" />
+          )} id="username" type="email" placeholder="Correo" {...register("email", { required: true},{pattern: {
+            value: /\S+@\S+\.\S+/,
+            message: 'Entered value does not match email format'
+          }})}/>
         </div>
         <div className={clsx(
           'mb-6'
@@ -71,7 +83,8 @@ const {register,handleSubmit} = useForm()
             'leading-tight',
             'hover:border-cyan-400 border-2',
             'focus:outline-none focus:shadow-outline')}
-            id="password" type="password" placeholder="******************" />  
+            id="password" type="password" placeholder="******************" {...register("password", { required: true, maxLength:16,minLength:8     
+            })}/>  
         </div>
         <div className={clsx(
           ' flex ',
@@ -88,7 +101,7 @@ const {register,handleSubmit} = useForm()
             'w-40',
             'rounded',
             'focus:outline-none focus:shadow-outline')}
-            type="button">
+            type="submit">
             Entrar
           </button>
           <span className='text-sm'>¿No tienes una cuenta?    
