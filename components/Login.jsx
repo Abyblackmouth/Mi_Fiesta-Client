@@ -49,7 +49,7 @@ const onSubmit = async data => {
           <label className={clsx(
             ' block ',
             'text-gray-700 text-sm font-bold mb-2')}
-            for="email">
+            htmlFor="email">
             Correo
           </label>
           <input className={clsx(
@@ -57,7 +57,10 @@ const onSubmit = async data => {
             'appearance-none',
             'border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline',
             'hover:border-cyan-400 border-2'
-          )} id="username" type="email" placeholder="Correo" {...register("email", { required: true},{pattern: {
+          )} 
+            id="username" 
+            type="email" 
+            placeholder="Correo" {...register("email", { required: true},{pattern: {
             value: /\S+@\S+\.\S+/,
             message: 'Entered value does not match email format'
           }})}/>
@@ -68,7 +71,7 @@ const onSubmit = async data => {
           <label className={clsx(
             'block',
             'text-gray-700 text-sm font-bold mb-2'
-          )} for="password">
+          )} htmlFor="password">
             Contraseña
           </label>
           <input className={clsx(
@@ -83,7 +86,9 @@ const onSubmit = async data => {
             'leading-tight',
             'hover:border-cyan-400 border-2',
             'focus:outline-none focus:shadow-outline')}
-            id="password" type="password" placeholder="******************" {...register("password", { required: true, maxLength:16,minLength:8     
+            id="password" 
+            type="password" 
+            placeholder="******************" {...register("password", { required: true, maxLength:16,minLength:8     
             })}/>  
         </div>
         <div className={clsx(
