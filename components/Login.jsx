@@ -2,10 +2,12 @@ import clsx from "clsx"
 import Image from 'next/image'
 import React from "react"
 import {useForm} from "react-hook-form"
+import Input from "./Input"
 
 export default function Login({ }) {
 const {register,handleSubmit} = useForm()
 const onSubmit = async data => {
+  {console.log(data)}
   let result = await fetch(
     'https://mifiesta-924b9-default-rtdb.firebaseio.com/.json',
     {
@@ -46,6 +48,15 @@ const onSubmit = async data => {
             'text-xl',
             'py-11'
           )}>Iniciar Sesión</h1>
+          <Input htmlFor='email' 
+          label='correo'
+          id='username2'
+          type='email'
+          placeholder='correo2'
+          value={/\S+@\S+\.\S+/}
+          message='error'
+          register={register} />
+
           <label className={clsx(
             ' block ',
             'text-gray-700 text-sm font-bold mb-2')}
@@ -97,6 +108,7 @@ const onSubmit = async data => {
           'justify-between',
           'flex-col'
           )}>
+          
           <button className={clsx(
             'bg-gradient-to-b from-[#249F95]/60 to-white',
             'hover:bg-gradient-to-r from-teal-400 to-[#249F95]/80',
