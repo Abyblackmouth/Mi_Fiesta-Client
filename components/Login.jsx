@@ -48,6 +48,7 @@ const onSubmit = async data => {
             'text-xl',
             'py-11'
           )}>Iniciar Sesión</h1>
+          
           <Input htmlFor='email' 
           label='correo'
           id='username2'

@@ -22,7 +22,7 @@ export default function Input({label,id,type,value,message,placeholder,htmlFor,r
          {...register(label, {required} ,{
           pattern: {
             value: {value},
-            message: {message}
+            message:{message}
           }
         })} />
     </>
