@@ -3,8 +3,8 @@ import { useForm } from "react-hook-form"
 import Input  from "./Input"
 import clsx from "clsx"
 
-export default function Form_Customer() {
-  const{register} = useForm
+export default function FormCustomer() {
+  const{register} = useForm()
   return (
     <>
       <form className={clsx(
@@ -22,13 +22,13 @@ export default function Form_Customer() {
           type='string'
           placeholder='Nombre de usuario'
           message='error'
-          // register={register}
+          register={register}
           />
 
         </div>
         <div>
         <h1>Dirección</h1>
-          <label for="cars">Ciudad:</label>
+          <label htmlFor="cars">Ciudad:</label>
           <select name="cars" id="cars">
             <option value="CDMX">Ciudad de México</option>
             <option value="Puebla">Puebla</option>

@@ -1,11 +1,13 @@
 import React from 'react'
 import clsx from "clsx"
 
-export default function H1({ texto }) {
+export default function H1({children}) {
   return (
     <>
-      <h1 className={clsx('font-size: 1.125rem ext-red-600')}>
-        {texto}</h1>
+      <h1 className={clsx('text-[1.125rem] text-red-600')}>
+        {children}
+      </h1>
+
     </>
   )
 }

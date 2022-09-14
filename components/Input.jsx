@@ -21,8 +21,8 @@ export default function Input({label,id,type,value,message,placeholder,htmlFor,r
         placeholder={placeholder}
          {...register(label, {required} ,{
           pattern: {
-            value: {value},
-            message:{message}
+          value: {value},
+          message:{message}
           }
         })} />
     </>
