@@ -4,7 +4,7 @@ import Input  from "./Input"
 import clsx from "clsx"
 
 export default function Form_Customer() {
-  const{register} = useForm
+  const{register} = useForm()
   return (
     <>
       <form className={clsx(
@@ -22,7 +22,7 @@ export default function Form_Customer() {
           type='string'
           placeholder='Nombre de usuario'
           message='error'
-          // register={register}
+          register={register}
           />
 
         </div>
