@@ -1,8 +1,3 @@
-import clsx from "clsx"
-import H1 from "./H1"
-import Layout from "./Layout"
-
-
 export default function Steps(){
     return (
     <>
