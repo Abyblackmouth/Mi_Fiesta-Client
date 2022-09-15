@@ -131,7 +131,7 @@ const onSubmit = async data => {
             'hover:text-blue-800',
             'py-4',
             'ml-5'
-          )}  href="./customer_registration">
+          )}  href="./customer-registration">
             Crear cuenta
           </a></span>
         </div>
