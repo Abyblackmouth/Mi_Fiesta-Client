@@ -1,13 +1,14 @@
 import FormCustomer from "../components/FormCustomer"
 import Layout from "../components/Layout"
-import H1 from "../components/H1"
+import H1 from "../components/Subtitle"
 
 export default function CustomerRegistration() {
   return (
 
     <Layout>
-      <H1> Hola Mundo </H1>
-      <FormCustomer/>
+    <FormCustomer> <H1>Hola mundo </H1> </FormCustomer>
+      
+      
     </Layout>
 
   )

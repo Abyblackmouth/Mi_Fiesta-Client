@@ -19,7 +19,7 @@ export default function Input({label,id,type,value,message,placeholder,htmlFor,r
         id={id}
         type={type}
         placeholder={placeholder}
-         {...register(label, {required} ,{
+         {...register(htmlFor, {required} ,{
           pattern: {
           value: {value},
           message:{message}
