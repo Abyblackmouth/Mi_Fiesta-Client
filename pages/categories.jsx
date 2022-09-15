@@ -7,7 +7,7 @@ export default function categories (){
     return (
     <>
     <Layout>
-        <Steps/>
+        <Steps step='w-1/4'/>
     </Layout>
     </>
     )

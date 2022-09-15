@@ -3,13 +3,13 @@ import H1 from "./Subtitle"
 import Layout from "./Layout"
 
 
-export default function Steps(){
+export default function Steps({step}){
     return (
     <>
     <div className="w-3/4">
         <div className="-mt-14">
             <div className="md:bg-slate-400 md:overflow-hidden md:rounded-full">
-                <div className="md:bg-[#249f95] md:h-2 md:rounded-full md:w-2/4"/>
+                <div className={`md:bg-[#249f95] md:h-2 md:rounded-full md:${step}`}/>
             </div>
                 <div className="hidden sm:grid grid-cols-4 px-2 text-gray-500 text-sm text-center font-medium">
                     <div className="text-indigo-500">Informacion</div>
