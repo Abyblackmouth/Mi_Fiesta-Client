@@ -4,7 +4,7 @@ import Login from "../components/Login";
 export default function HomeLogin (){
   return(
     <>
-    <Layout>
+    <Layout style='flex justify-center' >
       <Login />
     </Layout>
     </>

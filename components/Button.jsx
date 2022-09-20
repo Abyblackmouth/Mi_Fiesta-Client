@@ -1,6 +1,6 @@
 import clsx from "clsx"
 
-export default function Button ({etiqueta}){
+export default function Button ({etiqueta, style}){
     return(
         <button className={clsx(
             'bg-gradient-to-b from-[#249F95]/60 to-white', // pendiente tranformarlo a props
@@ -10,7 +10,9 @@ export default function Button ({etiqueta}){
             'py-2 px-4',
             'w-40',
             'rounded',
-            'focus:outline-none focus:shadow-outline')}
+            'focus:outline-none focus:shadow-outline',
+            style
+            )}
             type="submit">
             {etiqueta}
           </button>  
