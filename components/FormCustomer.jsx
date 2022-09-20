@@ -3,13 +3,14 @@ import { useForm } from "react-hook-form"
 import Input  from "./Input"
 import clsx from "clsx"
 import Subtitle from "./Subtitle"
+import Button from "./Button"
 
 export default function FormCustomer() {
   const{register} = useForm()
   return (
     <>
       <form className={clsx(
-        'w-1/2',
+        'w-2/12',
         'background-color: rgba(255, 255, 255, 0.4)',
         'box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08)',
         ' flex-direction:column content-center'
@@ -57,8 +58,8 @@ export default function FormCustomer() {
           message='error'
           register={register}
           />
-
         </div>
+        <Button etiqueta='Guardar'/>
       </form>
     </>
   )
