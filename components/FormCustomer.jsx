@@ -4,9 +4,23 @@ import Input  from "./Input"
 import clsx from "clsx"
 import Subtitle from "./Subtitle"
 import Button from "./Button"
+import {registerCustomer} from '../lib/api'
 
 export default function FormCustomer() {
-  const{register} = useForm()
+  
+  const {register,handleSubmit} = useForm()
+const onSubmit = async data => {
+  const data2 = {
+    userName:"Lenny",
+    email:"nasss1j@gmail.com",
+    password:"1258sjkd"
+  }
+  
+console.log('data:',data)
+  let resultado = registerCustomer(data2)
+ console.log('resultado:',resultado)
+  // console.log(await result.json())
+}
   return (
     <>
       <form className={clsx(
@@ -20,7 +34,7 @@ export default function FormCustomer() {
 
 
           <Input htmlFor='userName' 
-          id='username'
+          id='userName'
           type='string'
           placeholder='Nombre de usuario'
           message='error'
@@ -59,7 +73,7 @@ export default function FormCustomer() {
           register={register}
           />
         </div>
-        <Button etiqueta='Guardar'/>
+        <Button etiqueta='Guardar' onClick={onSubmit}/>
       </form>
     </>
   )

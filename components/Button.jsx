@@ -1,8 +1,9 @@
 import clsx from "clsx"
 
-export default function Button ({etiqueta}){
+export default function Button ({etiqueta, style,onClick}){
+
     return(
-        <button className={clsx(
+        <a className={clsx(
             'bg-gradient-to-b from-[#249F95]/60 to-white', // pendiente tranformarlo a props
             'hover:bg-gradient-to-r from-teal-400 to-[#249F95]/80',
             'text-white',
@@ -10,9 +11,12 @@ export default function Button ({etiqueta}){
             'py-2 px-4',
             'w-40',
             'rounded',
-            'focus:outline-none focus:shadow-outline')}
-            type="submit">
+            'focus:outline-none focus:shadow-outline',
+            style
+            )}
+            onClick={onClick}
+            >
             {etiqueta}
-          </button>  
+          </a>  
     )
 }
