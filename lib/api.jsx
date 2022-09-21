@@ -12,8 +12,8 @@ async function registerCustomer(data) {
       )
       console.log(result)
       let customer = await result.json()
-      console.log("customer:", customer)
-      return customer.data.newCustumer
+      console.log("customer newcustomer:", customer.data)
+      return customer.data
 }
 
 export {registerCustomer}
