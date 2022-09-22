@@ -1,24 +1,20 @@
 import clsx from "clsx"
-import H1 from "./Subtitle"
-import Layout from "./Layout"
-
-
-export default function Steps({step}){
+export default function Steps({ step }) {
     return (
-    <>
-    <div className="w-3/4">
-        <div className="-mt-14">
-            <div className="md:bg-slate-400 md:overflow-hidden md:rounded-full">
-                <div className={`md:bg-[#249f95] md:h-2 md:rounded-full md:${step}`}/>
-            </div>
-                <div className="hidden sm:grid grid-cols-4 px-2 text-gray-500 text-sm text-center font-medium">
-                    <div className="text-indigo-500">Informacion</div>
-                    <div className="text-indigo-500">Datos del negocio</div>
-                    <div className="text-indigo-500">Servicios que ofrece</div>
-                    <div className="text-indigo-500">Suscripcion</div>
+        <>
+            <div className="w-full sm:w-3/4 mx-auto">
+                <div className="-mt-14">
+                    <div className="hidden sm:block bg-slate-400 overflow-hidden rounded-full w-full">
+                        <div className={clsx('bg-[#249f95] h-2 rounded-full', step)} />
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-4 px-2 text-gray-500 text-sm text-center font-medium">
+                        <div className="text-[#23877f]">Informacion</div>
+                        <div className="text-[#23877f]">Datos del negocio</div>
+                        <div className="text-[#23877f]">Servicios que ofrece</div>
+                        <div className="text-[#23877f]">Suscripcion</div>
+                    </div>
                 </div>
-        </div>
-    </div>
-    </>
+            </div>
+        </>
     )
 }
