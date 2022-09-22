@@ -1,10 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Layout from '../components/Layout'
+import Head from 'next/head';
+import Image from 'next/image';
+import Layout from '../components/Layout';
+import Navbar from '../components/Navbar';
 
 export default function Home() {
   return (
-
-    <Layout></Layout>
-  )
+    <>
+      <Navbar></Navbar>
+      {/* <Layout></Layout> */}
+    </>
+  );
 }
