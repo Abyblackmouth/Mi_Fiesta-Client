@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Navbar></Navbar>
-      {/* <Layout></Layout> */}
+      <Layout></Layout>
     </>
   );
 }
