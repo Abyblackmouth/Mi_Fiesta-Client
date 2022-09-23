@@ -8,7 +8,7 @@ export default function Layout({children, style}) {
         'shadow-xl',
         'h-[80px]'
         )}>
-          <img className=""></img>
+          {/* <img className=""></img> */} {/* TODO: poner el logo aqui */}
       </nav>
       <main className={clsx(
         'bg-gradient-to-b from-[#249F95]/50 to-white',
