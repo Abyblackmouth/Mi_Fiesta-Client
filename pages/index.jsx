@@ -1,11 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Layout from '../components/Layout'
 
 export default function Home() {
   return (
-<>
-<div className='bg-red-600'>Hola a todos</div>
-</>
+
+    <Layout></Layout>
   )
 }
