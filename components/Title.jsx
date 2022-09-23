@@ -4,7 +4,7 @@ import clsx from "clsx"
 export default function Subtitle({children}) {
   return (
     <>
-      <h1 className={clsx('text-[1.125rem] text-[#313445] text-[24px] font-bold',
+      <h1 className={clsx('text-[1.125rem] text-[#313445] font-bold',
       'flex')}>
         {children}
       </h1>
