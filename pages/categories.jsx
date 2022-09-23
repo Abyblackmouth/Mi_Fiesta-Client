@@ -1,29 +1,29 @@
 import { useEffect, useState } from "react";
 import Layout from "../components/Layout";
 import Steps from "../components/Steps";
-import Category from "../components/Category";
+import { getCategories } from "../lib/api";
 
 export default function categories (){
 
 const [categories, setCategories] = useState([])
 
 useEffect( ()=>{
-    fetch("http://localhost:8081/category/")
-    .then((response)=> response.json())
-    .then(json =>{
-      setCategories(json.data)
-     
-    console.log(json.data)
-    })
+    getCategories()
+    .then((response)=> setCategories(response.categories))
   },[])
 
+  console.log('categories:',categories)
     return (
     <>
     <Layout style='flex justify-center'>
         <Steps step='w-1/2'/>
          
          {
-            console.log("esto es categories",categories)
+          categories.map((cv,index)=>{
+            
+            return <p> {cv.name}</p>
+          })
+           
           }
         
     </Layout>
