@@ -14,7 +14,7 @@ export default function landing () {
         'w-full',
         'justify-end ',
         )}>
-          <img className="" src="/Logo.png" alt="" />
+          <img className="ml-2" src="/Logo.png" alt="" />
           <div className="flex justify-end items-center text-sm text-[#385890] font-bold gap-6 mr-16">
             <a href="">Explora</a>
             <a href="">Registrate como proveedor</a>
@@ -103,8 +103,8 @@ export default function landing () {
                 <div className="flex flex-row">
                     <div className="w-1/2">
                         <ol>
-                            <li className="text-slate-500 hover:text-blue-400">Grupo a capella para eventos</li>
-                            <li className="text-slate-500 hover:text-blue-400">Orquesta para eventos</li>
+                            <li className="text-slate-500 hover:text-blue-400">Solistas</li>
+                            <li className="text-slate-500 hover:text-blue-400">Duetos</li>
                             <li className="text-slate-500 hover:text-blue-400">Banda musical</li>
                             <li className="text-slate-500 hover:text-blue-400">Espectaculo de conjunto musical</li>
                             <li className="text-slate-500 hover:text-blue-400">Concierto de quinteto</li>
@@ -113,11 +113,11 @@ export default function landing () {
                     </div>
                     <ol>
                         <li className="text-slate-500 hover:text-blue-400">Maquinas de karaoke</li>
-                        <li className="text-slate-500 hover:text-blue-400">Dúo de musica</li>
+                        <li className="text-slate-500 hover:text-blue-400">Orquesta Musical</li>
                         <li className="text-slate-500 hover:text-blue-400">Espectaculo de jazz</li>
                         <li className="text-slate-500 hover:text-blue-400">Banda de mariachis</li>
                         <li className="text-slate-500 hover:text-blue-400">Cuarteto de cuerdas para eventos</li>
-                        <li className="text-slate-500 hover:text-blue-400">Espectaculo de solista</li>
+                        <li className="text-slate-500 hover:text-blue-400">Piano</li>
                     </ol>
                 </div>
             </section>
@@ -164,11 +164,11 @@ export default function landing () {
                     </div>
                 </div>
             </section>
-            <h1 className="flex justify-center items-center h-36 text-slate-500 text-3xl">Unete a Mi Fiesta</h1>
+            <h1 className="flex justify-center items-center text-slate-500 text-3xl">Unete a Mi Fiesta</h1>
 
             <section className="flex justify-center w-full text-center">
                 <div className="max-w-sm rounded overflow-hidden shadow-lg w-1/3 m-2 text-slate-700">
-                    <img className="w-full" src="/cardsHome/Chef.jpg" alt="Chef"/>
+                    <img className="w-full md:h-1/2 md:object-cover" src="/cardsHome/Chef.jpg" alt="Chef"/>
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">Registra tu restaurante</div>
                         <p class="text-gray-700 text-base">
@@ -181,20 +181,21 @@ export default function landing () {
                 </div>
                 
                 <div className="max-w-sm rounded overflow-hidden shadow-lg w-1/3 m-2 text-slate-700">
-                    <img className="w-full" src="/cardsHome/Negocio-1.jpg" alt="Persona en su negocio"/>
+                    <img className="w-full md:h-1/2 md:object-cover" src="/cardsHome/Negocio-1.jpg" alt="Persona en su negocio"/>
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">Registra tu negocio</div>
                         <p class="text-gray-700 text-base">
                         Descubre los beneficios de asociarte con MiFiesta para impulzar tus ventas.
                         </p>
-                    </div>
-                    <div class="px-6 pt-1 pb-2">
+                        <div class="px-6 pt-1 pb-2">
                         <Button etiqueta='SABER MAS'style='text-xs'></Button>    
                     </div>
+                    </div>
+
                 </div>
 
                 <div className="max-w-sm rounded overflow-hidden shadow-lg w-1/3 m-2 text-slate-700">
-                    <img className="w-full" src="/cardsHome/PersonaGlobos.jpeg" alt="Persona con globos"/>
+                    <img className="w-full md:h-1/2 md:object-cover" src="/cardsHome/PersonaGlobos.jpeg" alt="Persona con globos"/>
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">Cotiza tu evento</div>
                         <p class="text-gray-700 text-base">
