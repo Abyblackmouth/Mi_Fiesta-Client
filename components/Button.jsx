@@ -1,6 +1,6 @@
 import clsx from "clsx"
 
-export default function Button({ etiqueta, style, onClick, isSubmit=false }) {
+export default function Button({ label, style, onClick, isSubmit=false }) {
 
   return (
     <>
@@ -13,14 +13,14 @@ export default function Button({ etiqueta, style, onClick, isSubmit=false }) {
           'font-bold',
           'overflow-clip',
           'py-2 px-4',
-          'w-40',
+           'w-full lg:w-auto',          
           'rounded',
           'focus:outline-none focus:shadow-outline',
           style
         )}
           onClick={onClick}
         >
-          {etiqueta}
+          {label}
         </a>}
       {
         isSubmit && <input className={clsx(
@@ -30,13 +30,13 @@ export default function Button({ etiqueta, style, onClick, isSubmit=false }) {
           'font-bold',
           'py-2 px-4',
           'overflow-clip',
-          'w-40',
+          'w-full lg:w-auto',
           'rounded',
           'focus:outline-none focus:shadow-outline',
           style
         )}
         type="submit"
-        value={etiqueta}
+        value={label}
         />
       }
     </>

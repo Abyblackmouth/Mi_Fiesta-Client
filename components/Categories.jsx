@@ -1,7 +1,7 @@
 import Subtitle from "./Subtitle"
 import Category from "./Category"
 
-export default function Categories ({section,arrCategory}){
+export default function Categories ({section,arrCategory,style}){
 
    const sectionsItems = arrCategory.filter((category)=>category.type == section)
    console.log('sections items:',sectionsItems)
@@ -9,7 +9,7 @@ export default function Categories ({section,arrCategory}){
     <>
     <Subtitle>{section}</Subtitle>
     {sectionsItems.map((item)=>{
-        return <Category  key={`${item._id}`} etiqueta={item.name}/>
+        return <Category style={'my-2'} key={`${item._id}`} label={item.name}/>
     })}
 
     </>)
