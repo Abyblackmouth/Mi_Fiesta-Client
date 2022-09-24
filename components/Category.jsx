@@ -1,6 +1,6 @@
 import clsx from "clsx"
 
-export default function Category({ label,style }) {
+export default function Category({ label,style , onClick }) {
 
   return (
       <div className={clsx(
@@ -17,8 +17,9 @@ export default function Category({ label,style }) {
         // 'focus:outline-none focus:shadow-outline',
         style
       )}
+        onClick={onClick}
       >
-        {onclick = () => console.log('diste click')}
+        
         {label}
       </div>
   )
