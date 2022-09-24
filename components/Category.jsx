@@ -5,21 +5,22 @@ export default function Category ({etiqueta }) {
     return(
         <>
 
-       <a className={clsx(
+       <div className={clsx(
                 'bg-indigo-50',
-                'w-30',
+                'm-3',               
                 'h-10',
                 'text-slate-900',
                 'font-bold',
                 'overflow-clip',
                 'py-2 px-4',
-                'w-40',
+                'w-{154px}',
                 'rounded',
-                'focus:outline-none focus:shadow-outline',
+                'focus:outline-none focus:shadow-outline'
               )}
-              >          
+              >   
+              {onclick=()=>console.log('diste click')}
                {etiqueta}
-              </a>
+              </div>
         
         </>
     )
