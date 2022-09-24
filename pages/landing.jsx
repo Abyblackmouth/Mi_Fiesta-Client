@@ -14,13 +14,12 @@ export default function landing () {
         'w-full',
         'justify-end ',
         )}>
-          <img className=""></img>
+          <img className="" src="/Logo.png" alt="" />
           <div className="flex justify-end items-center text-sm text-[#385890] font-bold gap-6 mr-16">
             <a href="">Explora</a>
             <a href="">Registrate como proveedor</a>
-            <a href="">Inicia sesion</a>
+            <a href="/login">Inicia sesion</a>
             <Button etiqueta='COTIZA TU EVENTO' style='text-xs'></Button>
-            
           </div>
       </nav>
         <main className="bg-neutral-100">
@@ -42,7 +41,7 @@ export default function landing () {
                         'row-start-1', 
                         'relative'
                         )}>
-                        <div className="flex justify-center items-center inset-0  absolute z-40 bg-zinc-600/25 text-white text-2xl rounded-xl">Flores</div>
+                        <div className="text-service-card">Flores</div>
                         <img className="image-service-card" src="/servicios/Flores.png"  alt=""  />
                     </div>
                     <div className={clsx(
@@ -50,7 +49,7 @@ export default function landing () {
                         'row-start-1',
                         'relative' 
                     )}>
-                        <h2 className="flex justify-center items-center inset-0  absolute z-40 bg-zinc-600/25 text-white text-2xl rounded-xl">Musica</h2>
+                        <h2 className="text-service-card">Musica</h2>
                         <img className="image-service-card" src="/servicios/Musica.png" alt="" />
                     </div>
                     <div className={clsx(
@@ -209,8 +208,41 @@ export default function landing () {
             </section> 
             </SectionLayout>
          </main> 
-         <footer>
-             <img className= "bg-hero w-full h-64 bg-cover"/>
+         <footer className= "bg-hero w-full h-64 bg-cover ">
+             <div className="flex justify-center items-center w-full text-white text-sm absolute m-16">
+                <div className="w-1/4 border-r-teal-100">
+                    <ol>
+                        <li>8117955304</li>
+                        <li>contacto@mifiesta.info</li>
+                        <li>Unete a nosotros</li>
+                        <li></li>
+                    </ol>
+                </div>
+                <div className="w-1/4">
+                    <ol>
+                        <li>Empresa</li>
+                        <li>Sobre Nosotros</li>
+                        <li>Contacto</li>
+                    </ol>
+                </div>
+                <div className="flex w-1/4">
+                    <ol>
+                        <li>Clientes</li>
+                        <li>Como funciona?</li>
+                        <li>Seguridad</li>
+                        <li>Aviso Legal</li>
+                        <li>Terminos y condiciones</li>
+                    </ol>
+                </div>
+                <div className="flex w-1/4">
+                    <ol>
+                        <li>Proveedores</li>
+                        <li>Como funciona?</li>
+                        <li>Registro</li>
+                        <li>Historias de exito</li>
+                    </ol>
+                </div>  
+             </div>
         </footer> 
         </>
     )
