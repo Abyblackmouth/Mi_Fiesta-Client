@@ -6,7 +6,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         'login': "url('/login-section.svg')",
-        'hero': "url('/hero.png')"
+        'hero': "url('/hero.png')",
+        'empty': "url('/empty-img.png')"
       }
     },
   },
