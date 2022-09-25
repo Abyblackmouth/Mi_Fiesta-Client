@@ -29,4 +29,20 @@ async function getCategories() {
   console.log(categories)
   return categories.data
 }
-export { registerCustomer, getCategories }
+
+async function registerCategory (data){
+  let result = await fetch(
+    `${baseUrl}category`,
+    {
+      method: 'POST',
+      mode: 'cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    }
+  )
+  console.log(result)
+  let customer = await result.json()
+  return customer.data
+
+}
+export { registerCustomer, getCategories, registerCategory }

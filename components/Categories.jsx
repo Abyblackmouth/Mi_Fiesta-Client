@@ -16,7 +16,7 @@ export default function Categories ({section,arrCategory,style,setCategoriesSele
     <>
     <Subtitle>{section}</Subtitle>
     {sectionsItems.map((item)=>{
-        return <Category style={'my-2'} key={`${item._id}`} label={item.name} onClick={()=>handleOnClick(item.name)}/>
+        return <Category style={'my-2 '} key={`${item._id}`} label={item.name} onClick={()=>handleOnClick(item.name)}/>
     })}
 
     </>)

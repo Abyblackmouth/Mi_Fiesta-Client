@@ -14,7 +14,7 @@ export default function Category({ label,style , onClick }) {
         // 'w-{154px}',
         'w-full',
         'rounded',
-        // 'focus:outline-none focus:shadow-outline',
+        'hover:border-cyan-400 border-2',
         style
       )}
         onClick={onClick}
