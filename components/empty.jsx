@@ -4,6 +4,10 @@ import React from "react"
 import {useForm} from "react-hook-form"
 import Input from "./Input"
 import Button from "./Button"
+import SectionLayout from "./home/SectionLayout"
+import NavGeneral from "./home/NavGeneral"
+
+import Layout from "./Layout"
 
 export default function Empty({ }) {
 const {register,handleSubmit} = useForm()
@@ -21,6 +25,8 @@ const onSubmit = async data => {
   return(
     <>
 
+      <NavGeneral />
+      <Layout style=' flex flex-col items-center'>
 
         <section className={clsx(
             'md:py-10 md:px-5', 
@@ -58,6 +64,9 @@ const onSubmit = async data => {
             </div>          
 
         </section>
+      </Layout >
+
+      
 
       
 
