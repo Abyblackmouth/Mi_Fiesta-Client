@@ -81,7 +81,10 @@ export default function categories() {
                 message='error'
                 register={register}
               />
-              <Button label='Crear' style='w-full md:ml-6' isSubmit />
+              <Button 
+                label='Crear' 
+                style='w-full md:ml-6' 
+                isSubmit />
 
             </form>
 

@@ -7,28 +7,29 @@ import Button from './Button';
 import { registerCustomer } from '../lib/api';
 
 export default function FormCustomer() {
-  const { register, handleSubmit } = useForm();
+  
+  const {register,handleSubmit} = useForm()
   const onSubmit = async (data) => {
-    const newData = {
-      userName: data.userName,
-      email: data.email,
-      password: data.password,
-      phoneNumbers: {
-        fixed: data.fixed,
-        mobile: data.mobile,
-      },
-      address: {
-        street: data.street,
-        city: data.city,
-        state: data.state,
-        zip: data.zip,
-      },
-    };
-
-    console.log('data:', data);
-    let resultado = await registerCustomer(newData);
-    console.log('resultado:', resultado.newCustomer);
-  };
+  const newData = {
+    userName:data.userName,
+    email:data.email,
+    password:data.password,
+    phoneNumbers:{
+      fixed:data.fixed,
+      mobile:data.mobile
+    },
+    address:{
+      street: data.street,
+      city: data.city,
+      state: data.state,
+      zip: data.zip
+    }
+  }
+  
+console.log('data:',data)
+  let resultado = await registerCustomer(newData)
+ console.log('resultado:',resultado.newCustomer)
+}
   return (
     <>
       <form

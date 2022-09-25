@@ -1,4 +1,20 @@
-const baseUrl = 'http://localhost:8081/'
+const baseUrl = 'https://kodemia-19g.mifiesta.me/'
+
+
+async function login(data){
+  
+  let result = await fetch(
+    `${baseUrl}login`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    }
+  )
+ /*  return result.json() */
+ console.log("result:", result)
+}
+
 
 async function registerCustomer(data) {
   let result = await fetch(
@@ -45,4 +61,9 @@ async function registerCategory (data){
   return customer.data
 
 }
-export { registerCustomer, getCategories, registerCategory }
+export { 
+  registerCustomer, 
+  getCategories, 
+  registerCategory, 
+  login 
+}
