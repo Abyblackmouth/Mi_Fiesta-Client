@@ -4,19 +4,19 @@ import React from "react"
 import {useForm} from "react-hook-form"
 import Button from "./Button"
 import Input from "./Input"
+import { ToastContainer,toast } from "react-toastify"
+import { login } from "../lib/api"
 
 export default function Login({ }) {
 const {register,handleSubmit} = useForm()
 const onSubmit = async data => {
   {console.log(data)}
-  let result = await fetch(
-    'https://mifiesta-924b9-default-rtdb.firebaseio.com/.json',
-    {
-      method: 'POST',
-      body: JSON.stringify(data)
-    }
-  )
-  console.log(await result.json())
+  const result = await login(data)
+  console.log("result:", result)
+  if(!result ){
+    toast.error("ups hubo un error")
+  } 
+
 }
   return(
     <>
@@ -43,6 +43,7 @@ const onSubmit = async data => {
         'shadow-md',
         'rounded-lg px-8 pt-6 pb-8 mb-4'
       )} onSubmit={handleSubmit(onSubmit)}>
+        <ToastContainer/>
         <div className={clsx('mb-4')}>
           <h1 className={clsx(
             'text-center',
@@ -51,39 +52,17 @@ const onSubmit = async data => {
           )}>Iniciar Sesión</h1>
           
           <Input htmlFor='email' 
-          label='correo'
+          label='Correo'
           id='username2'
           type='email'
-          placeholder='correo2'
+          placeholder='Ingresa tu correo'
           value={/\S+@\S+\.\S+/}
           message='error'
           register={register} />
 
           <label className={clsx(
-            ' block ',
-            'text-gray-700 text-sm font-bold mb-2')}
-            htmlFor="email">
-            Correo
-          </label>
-          <input className={clsx(
-            'shadow',
-            'appearance-none',
-            'border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline',
-            'hover:border-cyan-400 border-2'
-          )} 
-            id="username" 
-            type="email" 
-            placeholder="Correo" {...register("email", { required: true},{pattern: {
-            value: /\S+@\S+\.\S+/,
-            message: 'Entered value does not match email format'
-          }})}/>
-        </div>
-        <div className={clsx(
-          'mb-6'
-        )}>
-          <label className={clsx(
             'block',
-            'text-gray-700 text-sm font-bold mb-2'
+            'text-gray-700 text-sm font-bold mb-3 mt-3'
           )} htmlFor="password">
             Contraseña
           </label>
