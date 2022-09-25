@@ -13,15 +13,12 @@ export default function EventBudget() {
           <Steps step="w-1/2" />
           <Title children={'Cotiza tu evento'} />
         </div>
-        <div className="flex items-center justify-center  p-6">
-          
-            <div className='bg-white w-1/2 h-1/2 rounded shadow-sm'>
-              <div className='flex items-center justify-center mb-4'>
-              <input className='w-full h-40 py-2 bg-gray-50 text-gray-500 px-1 outline-none mb-4'></input>
-              </div>
-            </div>
-          </div>
-      
+        <div className="flex flex-col items-center justify-between  p-6 bg-pink-400">
+          <div className="flex items-center justify-center mb-4 bg-blue-400">hola 1</div>
+
+          <div className="flex items-center justify-center mb-4 bg-yellow-400">hola 2</div>
+        </div>
+        {/* <Input /> */}
       </Layout>
     </>
   );
