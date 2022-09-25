@@ -1,7 +1,7 @@
 import React from 'react'
 import clsx from "clsx"
 
-export default function Input({label,id,type,value,message,placeholder,htmlFor,required,register}) {
+export default function Input({label,id,type,value,message,placeholder,htmlFor,required,register,style}) {
   return (
     <>
       <label className={clsx(
@@ -14,7 +14,8 @@ export default function Input({label,id,type,value,message,placeholder,htmlFor,r
         'shadow',
         'appearance-none',
         'border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline',
-        'hover:border-cyan-400 border-2'
+        'hover:border-cyan-400 border-2',
+        style
       )}
         id={id}
         type={type}
