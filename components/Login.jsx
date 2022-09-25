@@ -2,6 +2,7 @@ import clsx from "clsx"
 import Image from 'next/image'
 import React from "react"
 import {useForm} from "react-hook-form"
+import Button from "./Button"
 import Input from "./Input"
 
 export default function Login({ }) {
@@ -109,19 +110,11 @@ const onSubmit = async data => {
           'justify-between',
           'flex-col'
           )}>
+
+          <Button
+            label='Entrar'
+            isSubmit/>
           
-          <button className={clsx(
-            'bg-gradient-to-b from-[#249F95]/60 to-white',
-            'hover:bg-gradient-to-r from-teal-400 to-[#249F95]/80',
-            'text-white',
-            'font-bold',
-            'py-2 px-4',
-            'w-40',
-            'rounded',
-            'focus:outline-none focus:shadow-outline')}
-            type="submit">
-            Entrar
-          </button>
           <span className='text-sm'>¿No tienes una cuenta?    
           <a className={clsx(
             'inline-block',
