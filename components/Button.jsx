@@ -1,6 +1,6 @@
 import clsx from "clsx"
 
-export default function Button({ etiqueta, style, onClick, isSubmit=false }) {
+export default function Button({ label, style, onClick, isSubmit=false }) {
 
   return (
     <>
@@ -18,7 +18,7 @@ export default function Button({ etiqueta, style, onClick, isSubmit=false }) {
         )}
           onClick={onClick}
         >
-          {etiqueta}
+          {label}
         </a>}
       {
         isSubmit && <input className={clsx(
@@ -32,7 +32,7 @@ export default function Button({ etiqueta, style, onClick, isSubmit=false }) {
           style
         )}
         type="submit"
-        value={etiqueta}
+        value={label}
         />
       }
     </>

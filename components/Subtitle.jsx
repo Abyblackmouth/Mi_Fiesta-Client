@@ -6,6 +6,7 @@ export default function Subtitle({ children }) {
     <h2 className={clsx(
       'text-[#313445] text-sm font-bold m-2',
       'flex',
+      'capitalize'
     )}>
       {children}
     </h2>

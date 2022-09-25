@@ -47,7 +47,7 @@ export default function InvitationCompaniesSection({ invitations }) {
                 <p className="text-gray-700 text-base">
                   {invitation.description}
                 </p>
-                <Button etiqueta="SABER MAS" style="text-xs" />
+                <Button label="SABER MAS" style="text-xs" />
               </div>
             </div>
           )
