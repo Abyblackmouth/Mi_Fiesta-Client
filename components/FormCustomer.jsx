@@ -37,7 +37,7 @@ export default function FormCustomer() {
           'w-full',
           'background-color: rgba(255, 255, 255, 0.4)',
           'box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08)',
-          ' flex-direction:column content-center'
+          // ' flex-direction:column content-center'
         )}
       >
         <div className={clsx('w-full')}>
