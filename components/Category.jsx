@@ -4,7 +4,6 @@ export default function Category ({etiqueta }) {
 
     return(
         <>
-
        <a className={clsx(
                 'bg-indigo-50',
                 'w-30',
@@ -20,7 +19,6 @@ export default function Category ({etiqueta }) {
               >          
                {etiqueta}
               </a>
-        
         </>
     )
 }

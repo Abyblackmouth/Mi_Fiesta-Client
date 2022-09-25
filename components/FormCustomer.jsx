@@ -9,7 +9,7 @@ import {registerCustomer} from '../lib/api'
 export default function FormCustomer() {
   
   const {register,handleSubmit} = useForm()
-const onSubmit = async (data) => {
+  const onSubmit = async (data) => {
   const newData = {
     userName:data.userName,
     email:data.email,
