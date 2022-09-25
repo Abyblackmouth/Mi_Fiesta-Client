@@ -137,7 +137,7 @@ export default function FormProv
           </div>
 
             <div className="flex justify-center mt-7">
-            <Button etiqueta='Guardar'/>
+            <Button label='Guardar'/>
           </div>
         </form>
       </>
