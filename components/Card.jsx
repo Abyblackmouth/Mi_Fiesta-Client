@@ -11,12 +11,12 @@ export default function Card() {
         'bg-white',
         'shadow-md',
         'flex flex-col justify-center items-center')}>
-        <header className={clsx(
+        <div className={clsx(
           'my-5'
         )}>
           <Subtitle>Mensual</Subtitle>
-        </header>
-        <body className={clsx('')}>
+        </div>
+        <div className={clsx('')}>
           <div>
             <p>beneficio 1</p>
             <p>beneficio 2</p>
@@ -25,10 +25,10 @@ export default function Card() {
           <div className={clsx('my-10')}>
             <p>$100 MXN</p>
           </div>
-        </body>
-        <footer className={clsx('mb-10')}>
+        </div>
+        <div className={clsx('mb-10')}>
           <Button etiqueta='Elegir' isSubmit />
-        </footer>
+        </div>
       </article>    
 
       <article className={clsx('w-1/3',
@@ -36,12 +36,12 @@ export default function Card() {
         'bg-white',
         'shadow-md',
         'flex flex-col justify-center items-center')}>
-        <header className={clsx(
+        <div className={clsx(
           'my-5'
         )}>
           <Subtitle>Trimestral</Subtitle>
-        </header>
-        <body className={clsx('')}>
+        </div>
+        <div className={clsx('')}>
           <div>
             <p>beneficio 1</p>
             <p>beneficio 2</p>
@@ -50,10 +50,10 @@ export default function Card() {
           <div className={clsx('my-10')}>
             <p>$250 MXN</p>
           </div>
-        </body>
-        <footer className={clsx('mb-10')}>
+        </div>
+        <div className={clsx('mb-10')}>
           <Button etiqueta='Elegir' isSubmit />
-        </footer>
+        </div>
       </article> 
 
 
@@ -62,12 +62,12 @@ export default function Card() {
         'mx-5',
         'shadow-md',
         'flex flex-col justify-center items-center')}>
-        <header className={clsx(
+        <div className={clsx(
           'my-5'
         )}>
           <Subtitle>Anual</Subtitle>
-        </header>
-        <body className={clsx('')}>
+        </div>
+        <div className={clsx('')}>
           <div>
             <p>beneficio 1</p>
             <p>beneficio 2</p>
@@ -76,10 +76,10 @@ export default function Card() {
           <div className={clsx('my-10')}>
             <p>$800 MXN</p>
           </div>
-        </body>
-        <footer className={clsx('mb-10')}>
+        </div>
+        <div className={clsx('mb-10')}>
           <Button etiqueta='Elegir' isSubmit />
-        </footer>
+        </div>
       </article> 
       </div>
     </>)
