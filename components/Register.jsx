@@ -1,14 +1,17 @@
-
 import clsx from "clsx"
-import Image from 'next/image'
 import React from "react"
 import {useForm} from "react-hook-form"
 import Button from "./Button"
 import Input from "./Input"
 import { ToastContainer,toast } from "react-toastify"
 import { login } from "../lib/api"
+import SelectExample from "./Select"
+
 
 export default function Register({ }) {
+
+
+
 const {register,handleSubmit} = useForm()
 const onSubmit = async data => {
   {console.log(data)}
@@ -125,11 +128,8 @@ const onSubmit = async data => {
             type="password" 
             placeholder="******************" {...register("password", { required: true, maxLength:16,minLength:8     
             })}/>  
-
-
         </div>
 
-        
         <div className={clsx(
           ' flex ',
           ' items-center',
