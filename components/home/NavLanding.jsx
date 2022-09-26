@@ -21,7 +21,7 @@ export default function LandingNav() {
           <a href="">Explora</a>
           <a href="">Registrate como proveedor</a>
           <a href="/login">Inicia sesion</a>
-          <Button etiqueta='COTIZA TU EVENTO' style='text-xs'></Button>
+          <Button label='COTIZA TU EVENTO' style='text-xs'></Button>
         </div>
       </nav>
       <div className="bg-hero w-full h-80 bg-cover"></div>

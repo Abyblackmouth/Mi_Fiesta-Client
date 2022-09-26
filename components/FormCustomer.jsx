@@ -132,7 +132,7 @@ console.log('data:',data)
             </div>
           </div>
             <div className="flex justify-center mt-7">
-            <Button etiqueta='Guardar' isSubmit/>
+            <Button label='Guardar' isSubmit/>
            
           </div>
         </form>
