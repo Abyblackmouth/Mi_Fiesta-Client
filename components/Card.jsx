@@ -10,7 +10,7 @@ export default function Card() {
         'mx-5',
         'bg-white',
         'shadow-md',
-        'flex flex-col justify-center items-center')}>
+        'flex flex-col justify-center items-center rounded-xl')}>
         <div className={clsx(
           'my-5'
         )}>
@@ -35,7 +35,7 @@ export default function Card() {
         'mx-5',
         'bg-white',
         'shadow-md',
-        'flex flex-col justify-center items-center')}>
+        'flex flex-col justify-center items-center rounded-xl')}>
         <div className={clsx(
           'my-5'
         )}>
@@ -61,7 +61,7 @@ export default function Card() {
         'bg-white',
         'mx-5',
         'shadow-md',
-        'flex flex-col justify-center items-center')}>
+        'flex flex-col justify-center items-center rounded-xl')}>
         <div className={clsx(
           'my-5'
         )}>

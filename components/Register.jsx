@@ -4,18 +4,14 @@ import {useForm} from "react-hook-form"
 import Button from "./Button"
 import Input from "./Input"
 import { ToastContainer,toast } from "react-toastify"
-import { login } from "../lib/api"
-import SelectExample from "./Select"
-
+import { register } from "../lib/api"
 
 export default function Register({ }) {
-
-
-
+  
 const {register,handleSubmit} = useForm()
 const onSubmit = async data => {
   {console.log(data)}
-  const result = await login(data)
+  const result = await register(data)
   console.log("result:", result)
   if(!result ){
     toast.error("ups hubo un error")
@@ -54,6 +50,21 @@ const onSubmit = async data => {
             'text-xl',
             'py-11'
           )}>Registro</h1>
+
+
+
+
+        <select className={clsx(
+        'shadow',
+        'appearance-none',
+        'border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline',
+        'hover:border-cyan-400 border-2 mb-8 ')}>
+        <option value="A">Proveedor</option>
+        <option value="B">Cliente</option>
+        </select>
+
+
+
 
         <Input htmlFor='name' 
           label='Nombres'
