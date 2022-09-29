@@ -2,7 +2,7 @@ import Layout from "../components/Layout"
 import Steps from "../components/Steps"
 import Card from "../components/Card"
 
-export default function CustomerRegistration() {
+export default function Suscriptions() {
   return (
 <>
     <Layout style='flex flex-col items-center'>
