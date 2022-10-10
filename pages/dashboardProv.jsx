@@ -5,18 +5,27 @@ import NavGeneral from "../components/home/NavGeneral";
 import CardRequest from "../components/provider/CardRequest";
 import CardTask from "../components/provider/CardTask";
 import CardCalendar from "../components/provider/CardCalendar";
+import CardProduct from "../components/provider/CardProduct";
+import Title from "../components/Title";
 
 export default function dashboardProv (){
   return(
     <>
-        <Layout style='flex justify-center ' >
+        <Layout className='flex justify-center ' >
             
             <NavGeneral />
 
-            <div className="flex space-x-1 lg:space-x-3">
-              <CardRequest /> 
+            <div className='w-ful h-12  flex justify-center bg-red items-center'>
+              <Title>Mis Eventos</Title>
+            </div>
 
-              <CardTask /> 
+            <div className="flex ">
+
+              <CardProduct /> 
+
+              <CardRequest /> 
+              
+              <CardTask />             
           
               <CardCalendar />
 
